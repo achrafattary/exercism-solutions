@@ -1,0 +1,6 @@
+1642085946006:test
+1642086679951:exercism download --exercise=two-fer --track=scala
+1642086685957:q
+1642086689095:quit
+1642086834490:test
+1642086844578:exercism submit src/main/scala/Twofer.scala
