@@ -1,8 +1,8 @@
 @echo off
-set /p UserInputPath=what is the commit
+set /p UserInput= what is the commit desc ? : 
 
 
 
 git add .
-git commit -m %UserInputPath%
+git commit -m %UserInput%
 git push
