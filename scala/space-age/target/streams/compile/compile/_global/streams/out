@@ -1,0 +1,120 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Achraf\Exercism\scala\space-age\src\main\scala\SpaceAge.scala:6:13: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Int[0m
+[0m[[0m[31merror[0m] [0m[0m required: ?{def *(x$1: ? >: Double(0.2408467)): ?}[0m
+[0m[[0m[31merror[0m] [0m[0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[0m[31merror[0m] [0m[0m both method int2long in object Int of type (x: Int)Long[0m
+[0m[[0m[31merror[0m] [0m[0m and method int2float in object Int of type (x: Int)Float[0m
+[0m[[0m[31merror[0m] [0m[0m are possible conversion functions from Int to ?{def *(x$1: ? >: Double(0.2408467)): ?}[0m
+[0m[[0m[31merror[0m] [0m[0m        (age/31557600) * 0.2408467[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Achraf\Exercism\scala\space-age\src\main\scala\SpaceAge.scala:6:24: overloaded method value * with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Int)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Char)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Short)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Byte)Int[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (Double)[0m
+[0m[[0m[31merror[0m] [0m[0m        (age/31557600) * 0.2408467[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Achraf\Exercism\scala\space-age\src\main\scala\SpaceAge.scala:9:13: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Int[0m
+[0m[[0m[31merror[0m] [0m[0m required: ?{def *(x$1: ? >: Double(0.61519726)): ?}[0m
+[0m[[0m[31merror[0m] [0m[0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[0m[31merror[0m] [0m[0m both method int2long in object Int of type (x: Int)Long[0m
+[0m[[0m[31merror[0m] [0m[0m and method int2float in object Int of type (x: Int)Float[0m
+[0m[[0m[31merror[0m] [0m[0m are possible conversion functions from Int to ?{def *(x$1: ? >: Double(0.61519726)): ?}[0m
+[0m[[0m[31merror[0m] [0m[0m        (age/31557600) * 0.61519726 [0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Achraf\Exercism\scala\space-age\src\main\scala\SpaceAge.scala:9:24: overloaded method value * with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Int)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Char)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Short)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Byte)Int[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (Double)[0m
+[0m[[0m[31merror[0m] [0m[0m        (age/31557600) * 0.61519726 [0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Achraf\Exercism\scala\space-age\src\main\scala\SpaceAge.scala:12:13: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Int[0m
+[0m[[0m[31merror[0m] [0m[0m required: ?{def *(x$1: ? >: Double(1.8808158)): ?}[0m
+[0m[[0m[31merror[0m] [0m[0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[0m[31merror[0m] [0m[0m both method int2long in object Int of type (x: Int)Long[0m
+[0m[[0m[31merror[0m] [0m[0m and method int2float in object Int of type (x: Int)Float[0m
+[0m[[0m[31merror[0m] [0m[0m are possible conversion functions from Int to ?{def *(x$1: ? >: Double(1.8808158)): ?}[0m
+[0m[[0m[31merror[0m] [0m[0m        (age/31557600) * 1.8808158[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Achraf\Exercism\scala\space-age\src\main\scala\SpaceAge.scala:12:24: overloaded method value * with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Int)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Char)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Short)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Byte)Int[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (Double)[0m
+[0m[[0m[31merror[0m] [0m[0m        (age/31557600) * 1.8808158[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Achraf\Exercism\scala\space-age\src\main\scala\SpaceAge.scala:15:13: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Int[0m
+[0m[[0m[31merror[0m] [0m[0m required: ?{def *(x$1: ? >: Double(11.862615)): ?}[0m
+[0m[[0m[31merror[0m] [0m[0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[0m[31merror[0m] [0m[0m both method int2long in object Int of type (x: Int)Long[0m
+[0m[[0m[31merror[0m] [0m[0m and method int2float in object Int of type (x: Int)Float[0m
+[0m[[0m[31merror[0m] [0m[0m are possible conversion functions from Int to ?{def *(x$1: ? >: Double(11.862615)): ?}[0m
+[0m[[0m[31merror[0m] [0m[0m        (age/31557600) * 11.862615[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Achraf\Exercism\scala\space-age\src\main\scala\SpaceAge.scala:15:24: overloaded method value * with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Int)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Char)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Short)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Byte)Int[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (Double)[0m
+[0m[[0m[31merror[0m] [0m[0m        (age/31557600) * 11.862615[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Achraf\Exercism\scala\space-age\src\main\scala\SpaceAge.scala:18:13: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Int[0m
+[0m[[0m[31merror[0m] [0m[0m required: ?{def *(x$1: ? >: Double(29.447498)): ?}[0m
+[0m[[0m[31merror[0m] [0m[0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[0m[31merror[0m] [0m[0m both method int2long in object Int of type (x: Int)Long[0m
+[0m[[0m[31merror[0m] [0m[0m and method int2float in object Int of type (x: Int)Float[0m
+[0m[[0m[31merror[0m] [0m[0m are possible conversion functions from Int to ?{def *(x$1: ? >: Double(29.447498)): ?}[0m
+[0m[[0m[31merror[0m] [0m[0m        (age/31557600) * 29.447498 [0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Achraf\Exercism\scala\space-age\src\main\scala\SpaceAge.scala:18:24: overloaded method value * with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Int)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Char)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Short)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Byte)Int[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (Double)[0m
+[0m[[0m[31merror[0m] [0m[0m        (age/31557600) * 29.447498 [0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Achraf\Exercism\scala\space-age\src\main\scala\SpaceAge.scala:21:13: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Int[0m
+[0m[[0m[31merror[0m] [0m[0m required: ?{def *(x$1: ? >: Double(84.016846)): ?}[0m
+[0m[[0m[31merror[0m] [0m[0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[0m[31merror[0m] [0m[0m both method int2long in object Int of type (x: Int)Long[0m
+[0m[[0m[31merror[0m] [0m[0m and method int2float in object Int of type (x: Int)Float[0m
+[0m[[0m[31merror[0m] [0m[0m are possible conversion functions from Int to ?{def *(x$1: ? >: Double(84.016846)): ?}[0m
+[0m[[0m[31merror[0m] [0m[0m        (age/31557600) * 84.016846[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Achraf\Exercism\scala\space-age\src\main\scala\SpaceAge.scala:21:24: overloaded method value * with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Int)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Char)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Short)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Byte)Int[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (Double)[0m
+[0m[[0m[31merror[0m] [0m[0m        (age/31557600) * 84.016846[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Achraf\Exercism\scala\space-age\src\main\scala\SpaceAge.scala:24:13: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Int[0m
+[0m[[0m[31merror[0m] [0m[0m required: ?{def *(x$1: ? >: Double(164.79132)): ?}[0m
+[0m[[0m[31merror[0m] [0m[0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[0m[31merror[0m] [0m[0m both method int2long in object Int of type (x: Int)Long[0m
+[0m[[0m[31merror[0m] [0m[0m and method int2float in object Int of type (x: Int)Float[0m
+[0m[[0m[31merror[0m] [0m[0m are possible conversion functions from Int to ?{def *(x$1: ? >: Double(164.79132)): ?}[0m
+[0m[[0m[31merror[0m] [0m[0m        (age/31557600) * 164.79132[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Achraf\Exercism\scala\space-age\src\main\scala\SpaceAge.scala:24:24: overloaded method value * with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Int)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Char)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Short)Int <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (x: Byte)Int[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (Double)[0m
+[0m[[0m[31merror[0m] [0m[0m        (age/31557600) * 164.79132[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m14 errors found[0m
