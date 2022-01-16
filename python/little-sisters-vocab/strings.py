@@ -1,9 +1,11 @@
+from operator import concat
+
 def add_prefix_un(word):
-    return "".join(['un',word])
+    return concat('un',word)
     
 def make_word_groups(vocab_words):
     for index,e in  enumerate(vocab_words) :
-        if index > 0 : vocab_words[index] = "".join([vocab_words[0],vocab_words[index]])
+        if index > 0 : vocab_words[index] = concat(vocab_words[0],vocab_words[index])
     return " :: ".join(vocab_words) 
    
 
