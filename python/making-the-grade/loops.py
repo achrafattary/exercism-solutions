@@ -31,8 +31,9 @@ def letter_grades(highest):
 
 def student_ranking(student_scores, student_names):
     l = ["a"]*len(student_scores)
+    str = '{rank}. {fname}: {grade}'
     for index,intem in enumerate(student_scores):
-        l[index] = "" + str(index + 1) + ". " + student_names[index] +": " + str(student_scores[index])
+        l[index] = str.format(rank = index +1,fname = student_names[index],grade =  student_scores[index]  )
     return l
 
 
