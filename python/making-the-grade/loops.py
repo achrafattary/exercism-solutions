@@ -23,7 +23,7 @@ def above_threshold(student_scores, threshold):
 def letter_grades(highest):
     l = [40]*4
     interval_dif = round((highest-40)/4)
-    for index,item in enumerate(l) :
+    for index in range(0,len(l)) :
         l[index] = (41 + interval_dif*index)
     return l
 
@@ -31,9 +31,9 @@ def letter_grades(highest):
 
 def student_ranking(student_scores, student_names):
     l = ["a"]*len(student_scores)
-    str = '{rank}. {fname}: {grade}'
-    for index,intem in enumerate(student_scores):
-        l[index] = str.format(rank = index +1,fname = student_names[index],grade =  student_scores[index]  )
+    txt = '{rank}. {fname}: {grade}'
+    for index in range(0,len(student_scores)):
+        l[index] = txt.format(rank = index +1,fname = student_names[index],grade =  student_scores[index]  )
     return l
 
 
