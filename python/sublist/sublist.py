@@ -13,53 +13,27 @@ You can learn more here: https://en.wikipedia.org/wiki/Enumerated_type
 
 # Possible sublist categories.
 # Change the values as you see fit.
-from itertools import count
-
-
 SUBLIST = "SUBLIST"
 SUPERLIST = "SUPERLIST"
 EQUAL = "EQUAL"
 UNEQUAL = "UNEQUAL"
 
-def are_equal(list_one,list_two):
-    if len(list_one) != len(list_two) : return False
-    else:
-        for index in range(0,min(len(list_one),len(list_two))):
-            if list_one[index] != list_two[index]:
-                return False
-    return True
-def is_sublist(list_one,list_two):
-    state = True
-    count = 0
-    if len(list_two) < len(list_one):
-        return False
-    elif len(list_two) * len(list_one) == 0:
-        return True
-    else :
-        for index2,item2 in enumerate(list_two):
-            for index,item in enumerate(list_one):
-                try :
-                    if list_one[index] == list_two[index2 + index]:
-                        count = count + 1
-                    else :
-                        break
-                except :
-                    break
-                if count == len(list_one) :
-                    return True
-            count = 0
-    return False
-def sublist(list_one, list_two):
-    if are_equal(list_one,list_two): return EQUAL
-    elif len(list_one) <= len(list_two): 
-        if is_sublist(list_one,list_two): 
-            return SUBLIST
-        else : return UNEQUAL
-    elif len(list_one) >= len(list_two):  
-        if is_sublist(list_two,list_one): return SUPERLIST
-        else : return UNEQUAL
-    else : return UNEQUAL
 
+def is_sublist(list_one,list_two):
+    if len(list_two) > len(list_one):
+        if len(list_two)*len(list_one) == 0 : return SUBLIST
+        for index2 in range(0,len(list_two)-len(list_one)+1):
+            if list_one == list_two[index2:index2 + len(list_one)]: return SUBLIST 
+    elif len(list_two) < len(list_one):
+        if len(list_two)*len(list_one) == 0 : return SUPERLIST
+        for index in range(0,len(list_one)-len(list_two)+1):
+            if list_two == list_one[index:index + len(list_two)]: return SUPERLIST
+    return UNEQUAL 
+
+
+def sublist(list_one, list_two):
+    if list_one == list_two: return EQUAL
+    else : return is_sublist(list_one,list_two)
 
 
 
