@@ -27,13 +27,15 @@ def remove_item(inventory, item):
     try :
         inventory.pop(item)
         return inventory
-    except:
+    except IndexError:
+        print('item not in inventory')
+    finally :
         return inventory
     
 
 def list_inventory(inventory):
     lst = list(inventory.items())
-    for index,item in enumerate(lst):
+    for item in lst:
         if item[1] == 0:
             lst.remove(item)
     return lst
