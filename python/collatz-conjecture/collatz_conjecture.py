@@ -1,13 +1,11 @@
-def steps(number):
-    if(number > 0):
-        reste = number
-        iterations = 0
-        while (reste != 1 ):
-            if reste%2 == 0:
-                reste = reste / 2
-            else :
-                reste = reste*3 + 1
-            iterations += 1
-        return iterations
+def steps(number,iteration = 0):
+    if(number <= 0):
+       raise ValueError("Only positive numbers are allowed")
+    elif (number == 1) :
+        return iteration
     else:
-        raise ValueError("Only positive numbers are allowed")
+        iteration = iteration + 1
+        if (number%2 == 0):
+            return steps(int(number/2),iteration)
+        else :
+            return steps(number*3 + 1,iteration)
