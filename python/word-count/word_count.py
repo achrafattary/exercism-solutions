@@ -1,23 +1,21 @@
 import collections
+import string
 def count_words(sentence):
-    s_1 = sentence.replace('\n',' ')
-    s_1 = s_1.replace('\t',' ')
-    s_1 = s_1.replace('_'," ")
-    s_1 = s_1.replace(','," ")
-    punc ='''!()-[]{};:",<>./!'.?@#$%^&*_~'''
-    s_2 = ''
-    for index,item in  enumerate(s_1):
-        if item == "'" and index < len(s_1) - 1:
-            if s_1[index+1] == "t" and s_1[index-1] != ' ' :
-                s_2 = s_2 + "'"
-                print(s_2)
-            else :
-                continue
-        if item not in punc:
-            s_2 = s_2 + item
-    s_3 = s_2.lower()
-    counter=collections.Counter(s_3.split(' '))
+    letters = string.ascii_lowercase
+    numbers = [str(i) for i in range(0,10)]
+    sent =  sentence.replace('\n',' ').replace('\t',' ').replace('_'," ").replace(","," ").lower()
+    print(sent)
+    s = ""
+    for index,item in enumerate(sent) :
+        if item == " " and sent[index-1] != ' ':
+            print(sent[len(s)-1])
+            s = s + " "
+        if item == "'" and sent[(index+1)*(index+1 < len(sent))] == "t" and sent[index-1] != ' ' :
+            s=s+ item
+        if item in letters or item in numbers :
+            s = s + item
+    counter=collections.Counter(s.split(' '))
     dtc = dict(counter)
-    if "" in dtc.keys(): del dtc[""]
-    if " " in dtc.keys() : del dtc[' ']
+    if "" in dtc.keys():
+        del dtc[""]
     return dtc
